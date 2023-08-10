@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Display introductory message
+echo "****************************************************"
+echo "          Day 2 Tasks - CEO Transition"
+echo "****************************************************"
 
 #Day2
 #copy the previous ceo directory and assign all to new ceo asjohnson
@@ -26,7 +30,9 @@ echo "***added asjohnson as the new CEO***"
 echo "***added asjohnson as the new CEO***"
 echo "***added asjohnson as the new CEO***"
 sleep 3
-echo "***************************************************Welcome!!!!!! New CEO, Setting up your Desk***************************************"
+cho "***************************************************"
+echo "   Welcome!!!!!! New CEO, Setting up your Desk"
+echo "***************************************************"
 sleep 5
 echo "***Moving things around, Setting your Picture on the Wall***"
 sleep 1
