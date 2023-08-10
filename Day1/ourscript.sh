@@ -24,7 +24,7 @@ folder_to_check="PlanetGreen"
     echo "**Successfully created IT, Executive, HR, Finance, and Operations folders**"
     
     # Enter IT directory and create subdirectories
-    cd IT && mkdir Management Engineering "Systems Administration" Security Networking
+    cd IT && mkdir Management Engineering Systems_Administration Security Networking
     tree
     cd ..
     
