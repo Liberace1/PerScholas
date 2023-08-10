@@ -28,7 +28,8 @@ if [ -d "$folder_to_check" ]; then
      echo "Copy and paste this command ***rm -rf PlanetGreen && sudo ./main.sh**....."
     exit 1
 else
-        echo "The folder '$folder_to_check' does not exist. Proceeding with script."
+        echo "The folder '$folder_to_check' does not exist. Proceeding with script By Creating Folder $folder_to_check."
+	sleep 4
     # Store the original directory
     original_dir="$(pwd)"
 
