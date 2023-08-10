@@ -16,7 +16,7 @@ fi
 
 if [ "$choice" == "y" ] || [ "$choice" == "Y" ]; then
     sudo yum install tree -y
-    echo "Successfully installed tree."
+    echo "Tree is Present........"
     echo "You can now use the 'tree' command for better visual file structure."
     echo "Proceeding..."
 
