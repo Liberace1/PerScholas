@@ -1,8 +1,8 @@
-#!bin/bash
+#!/bin/bash
+
+
 #Day2
 #remove Geona Access
-
-
 
 #add new CEO asjohnson
 usermod -aG CEO asjohnson
@@ -10,6 +10,7 @@ usermod -aG Finance asjohnson
 usermod -aG HR asjohnson
 usermod -aG IT asjohnson
 usermod -aG Operations asjohnson
+
 
 #copy the previous ceo directory and assign all to new ceo asjohnson
 cp -a /home/gahattleburg /home/asjohnson
@@ -33,9 +34,24 @@ groupadd DEIB
 chown -R :DEIB DEIB
 # Add users to the DEIB group
 usermod -aG DEIB "rkjames"
+echo "added rkjames to DEIB"
 usermod -aG DEIB "kacorinth"
+echo "added kacorinth to DEIB"
 usermod -aG DEIB "rrwinthrow"
+echo "added rrwinthrow to DEIB"
 usermod -aG DEIB "tycorson"
+echo "added tycorson to DEIB"
+usermod -aG DEIB "gahattleburg"
+echo "added gahattleburg to DEIB"
+usermod -aG DEIB "asjohnson"
+echo "added asjohnson to DEIB"
+usermod -aG DEIB "engraham"
+echo "added engraham to DEIB"
+usermod -aG DEIB "dssanchez"
+echo "added dssanchez to DEIB"
+usermod -aG DEIB "xjhurston"
+echo "added xjhurston to DEIB"
+
 
 echo "DEIB group created and users added successfully."
 
