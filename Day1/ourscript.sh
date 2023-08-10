@@ -5,12 +5,7 @@
 folder_to_check="PlanetGreen"
 
 # Check if the folder exists
-if [ -d "$folder_to_check" ]; then
-    echo "The folder '$folder_to_check' already exists. Aborting..."
-    echo "Please delete '$folder_to_check' and re-run the script."
-    exit 1
-else
-    echo "The folder '$folder_to_check' does not exist. Proceeding with the script."
+  
     
     # List the contents of the current directory
     ls
@@ -110,6 +105,5 @@ else
     # Enter Operations directory and create subdirectories
     cd Operations &&  mkdir Management "Customer Care" Sales
     tree
-    echo "****Successfully Created all required directories per Donna's Exercise****"
-fi
+    
 
