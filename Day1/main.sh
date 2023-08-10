@@ -50,7 +50,10 @@ else
             if [ -d "$folder" ]; then
                 # Change to the folder
                 cd "$folder"
-                echo "..Starting Script Installation, Hold on tight..............."
+                echo "***************************************************"
+                echo "   Starting Script Installation, Hold on tight..."
+                echo "***************************************************"
+                sleep 3
 
                 # Copy the script from the original directory
                 cp -f "$original_dir/ourscript.sh" .
@@ -70,7 +73,10 @@ else
 
     cd ..
     # Adding users and groups
-    echo "*****************Running useradd script*****************"
+    # ... (Before running the useradd script)
+    echo "***************************************************"
+    echo "   Running useradd script..."
+    echo "***************************************************"
     sleep 3
     ./useraddscript.sh
     echo "*************** Users and groups successfully created *********************"
@@ -102,8 +108,13 @@ else
     if [ -d "$folder" ]; then
 
             # Change to the folder
-    echo "Folder exists, Now preparing files.............."
-    echo "*****Copying 3 scripts to '$folder' Folder and preparing for installation..*********"
+    echo "***************************************************"
+    echo "   Folder exists, Now preparing files..."
+    echo "***************************************************"
+    echo "*****Copying 3 scripts to '$folder' Folder and preparing for installation..*****"
+    echo "***************************************************"
+    echo "*****Setting Neccesary permissions to folders, Management permissions to Mgmt Groups and CEO permissions Respectively..*****"
+    echo "***************************************************"
     sleep 4
     cd "$folder"
     pwd
@@ -159,5 +170,5 @@ fi
 
 else
     
-  echo "We have to ensure *TREE* is installed before running script, Tree is required for this script to run as intended, you choose 'N' Hency why..... Script is Aborting, Choose 'Y' on next run............"
+  echo "We have to ensure *TREE* is installed before running script, Tree is required for this script to run as intended, you chose 'N' Hency why..... Script is Aborting, Choose 'Y' on next run............"
 fi
