@@ -142,5 +142,5 @@ else
 fi
 
 else
-    echo "You have to Install tree for this script to run as intended, Hency why..... Script is Aborting, Choose Y on next run............"
+    echo "We have to ensure *TREE* is installed before running script, Tree is required for this script to run as intended, you choose 'N' Hency why..... Script is Aborting, Choose 'Y' on next run............"
 fi
