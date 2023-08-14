@@ -9,6 +9,7 @@ This script installs Extract to close output after "TOP" commad is run, and unin
 
 *Run NewCEO.sh Script afterwards to add groups/users and also add users to respective groups
 
-Backup.sh to run backup for files as stated in the question,also set access for NEW CEO
+*Backup.sh to run backup for files as stated in the question,also set access for NEW CEO
+*Run Backup2server.sh to  send backup files to backupserver
 
 #Completed
