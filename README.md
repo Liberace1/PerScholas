@@ -1,6 +1,14 @@
+This script installs tree for visual presentation
+This script installs Extract to close output after "TOP" commad is run, and uninstalls it afterwards
+
+
 # PerScholas
-#Run Main.sh to complete Day 1 Task, ensure to move all script to home dir(same level as where planetGreen folder will be installed
-#Tree will be installed for script to run- used for visuals
-Run NewCEO.sh Script after3wards to add groups/users and also adsd users to respective groups
-Run Day3bkp.sh
-#Completed all exercise
+*Run extract.sh first to copy files and place scripts in respective folder needed to operate functionally
+
+*Run Main.sh to complete Day 1 Task,  to move all script to home dir(same level as where planetGreen folder will be installed
+
+*Run NewCEO.sh Script afterwards to add groups/users and also add users to respective groups
+
+Backup.sh to run backup for files as stated in the question,also set access for NEW CEO
+
+#Completed
