@@ -7,7 +7,7 @@ folders=("Day1" "Day2" "Day3")
 # Flag to track if all folders exist
 all_folders_exist=true
 
-cp -r cleanupcript.sh ../
+cp -r cleanupscript.sh ../
 # Check if all specified directories exist
 for folder in "${folders[@]}"; do
     if [ ! -d "$folder" ]; then
