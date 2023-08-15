@@ -14,8 +14,11 @@ This script installs Extract to close output after "TOP" commad is run, and unin
 
 #Completed
 
+#run undo.sh to undo script changes
+#run cleanupscript.sh to remove script and clean up directories after succesful run.
 
-script backup2server.sh needs to change to match your Server B ip and also a folder named "Backup" needs to be created on Server B for this to work
+
+script backup2server.sh needs to change to match your Server "B" IP Adrress and also a folder named "Backup" needs to be created on Server B for this to work
 Copy server A id_rsa.pub to authorized_keys on Server B
 Server A will be where script is run
 Server B will be where you intend to put the backup files as required in Day3 question

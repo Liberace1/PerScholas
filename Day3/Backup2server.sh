@@ -29,6 +29,8 @@ done
     done
 
 sudo scp -i .ssh/id_rsa -r "$folder_name"  ec2-user@35.174.8.102:/home/ec2-user/Backup/
+
+rm -rf "$folder_name"
 echo "*********************************************************************"
 echo "************Backing up to backup server 35.174.8.102*****************"
 echo "*********************************************************************"
