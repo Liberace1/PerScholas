@@ -19,13 +19,25 @@ echo "**************************************************************************
 echo "************************Setting Permissions**********************************"
 echo "*****************************************************************************"
 sleep 5
+sudo useradd -m -s /bin/bash $ceo_username
+echo "User account $ceo_username created."
+usermod -aG IT sjhuckleberry
+usermod -aG CEO sjhuckleberry
+usermod -aG HR sjhuckleberry
+usermod -aG Finance sjhuckleberry
+usermod -aG Operations sjhuckleberry
+# Create a system account for testing applications in Engineering
+sudo useradd -r -s /bin/bash $dev_test_username -G $engineering_group
+echo "System account $dev_test_username created for $engineering_group."
+
+echo "User and system account setup completed."
 # Set permissions for directories
 for subdir in "${subdirectories[@]}"; do
 
 cd "$subdir"
 
     for gfolder in "${group_folder[@]}"; do
-
+        
         setfacl -R -m u:"$ceo_username":rX "$gfolder"
         echo "Permissions for $ceo_username set in $gfolder directory for $subdir Bank Folder."
     done
@@ -147,7 +159,7 @@ for subdir in "${subdirectories[@]}"; do
     for file in "${files[@]}"; do
         if [ "$file" == "ifcfg-eth0" ]; then
             sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 "$subdir/IT/Systems_Administration/backup/"
-            echo "$file found and copied succesfully to $subdir"
+            echo "$file found"
             sleep 2
         else
             echo "Not found"
@@ -163,15 +175,13 @@ files2=("shadow" "resolv.conf" "hosts" "yum.conf")
 for subdir in "${subdirectories[@]}"; do
     # Create the SystemAdministration and backup directories
 
-
+echo " Copying Shadow, resolv.conf, hosts and yum.conf, (If found file will copy).. copying to $subdir Bank folder.........."
 
     # Copy specified files to the backup directory
     for file2 in "${files2[@]}"; do
         if  [ "$file2" == "shadow" ] || [ "$file2" == "resolv.conf" ] || [ "$file2" == "hosts" ] || [ "$file2" == "yum.conf" ]; then
             cp -r /etc/$file2  "$subdir/IT/Systems_Administration/backup/"
 
-
-            echo "some files were found and copied succesfully to $subdir.........."
             sleep 2
         else
             echo "Not found"
