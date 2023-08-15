@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # List  users and delete them
@@ -8,6 +7,7 @@ user_to_delete=(
 "engraham"
 "dssanchez"
 "xjhurston"
+"sjhuckleberry"
 "mrjones"
 "jlbach"
 "rkjames"
@@ -35,6 +35,7 @@ user_to_delete=(
 "atstone"
 "gnlee1"
 "gahattleburg"
+"dev_TEST"
 )
 for username in ${user_to_delete[@]}; do
     if [ "$username" != "ec2-user" ]; then
