@@ -113,7 +113,7 @@ usermod -aG DEIB "rrwinthrow"
 echo "added rrwinthrow to DEIB"
 usermod -aG DEIB "tycorson"
 echo "added tycorson to DEIB"
-echo "Addtional Group Members addedd successfully."
+echo "Additional Group Members addedd successfully."
 sleep 2
 #inspecting groups
 echo "............................Inspect New Group Members..................."
