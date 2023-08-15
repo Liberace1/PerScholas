@@ -19,6 +19,8 @@ done
 if $all_folders_exist; then
     cp -r Day1/* ../ && cp -r Day2/* ../ && cp -r Day3/* ../
     echo "Files copied successfully."
+    cd ~
+    ls
 else
     echo "******************************************************************************"
     echo "One or more of the directories (${folders[@]}) do not exist."
