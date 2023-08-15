@@ -1,5 +1,6 @@
 #!/bin/bash
-
+cp -r NewCEO.sh PlanetGreen
+cd PlanetGreen
 # Display introductory message
 echo "****************************************************"
 echo "          Day 2 Tasks - CEO Transition"
@@ -113,7 +114,7 @@ usermod -aG DEIB "rrwinthrow"
 echo "added rrwinthrow to DEIB"
 usermod -aG DEIB "tycorson"
 echo "added tycorson to DEIB"
-echo "Additional Group Members addedd successfully."
+echo "Additional Group Members added successfully."
 sleep 2
 #inspecting groups
 echo "............................Inspect New Group Members..................."
@@ -121,6 +122,8 @@ echo "............................Inspect New Group Members..................."
 echo "............................Inspect New Group Members..................."
 getent group DEIB
 sleep 5
+rm -r NewCEO.sh
+cd ~
 echo ".................Day 2 task Completed..................."
 echo ".................Day 2 task Completed..................."
 echo ".................Day 2 task Completed..................."
