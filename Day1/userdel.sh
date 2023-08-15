@@ -5,7 +5,7 @@
 user_to_delete=(
 "gahattleburg"
 "asjohnson"
-"erika-graham"
+"engraham"
 "dssanchez"
 "xjhurston"
 "mrjones"
@@ -34,6 +34,7 @@ user_to_delete=(
 "bjgomez"
 "atstone"
 "gnlee1"
+"gahattleburg"
 )
 for username in ${user_to_delete[@]}; do
     if [ "$username" != "ec2-user" ]; then
@@ -64,6 +65,7 @@ groups_to_delete=(
     "Customer_Care"
     "Sales"
     "Systems_Administrator"
+    "DEIB"
 )
 
 # Delete specific groups
