@@ -34,7 +34,6 @@ user_to_delete=(
 "bjgomez"
 "atstone"
 "gnlee1"
-"gahattleburg"
 "dev_TEST"
 )
 for username in ${user_to_delete[@]}; do
