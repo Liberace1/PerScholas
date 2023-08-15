@@ -147,7 +147,7 @@ for subdir in "${subdirectories[@]}"; do
     for file in "${files[@]}"; do
         if [ "$file" == "ifcfg-eth0" ]; then
             sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 "$subdir/IT/Systems_Administration/backup/"
-            echo "$file found"
+            echo "$file found and copied succesfully to $subdir"
             sleep 2
         else
             echo "Not found"
@@ -171,7 +171,7 @@ for subdir in "${subdirectories[@]}"; do
             cp -r /etc/$file2  "$subdir/IT/Systems_Administration/backup/"
 
 
-            echo "The files found have been copied to the intended folder.........."
+            echo "some files were found and copied succesfully to $subdir.........."
             sleep 2
         else
             echo "Not found"
