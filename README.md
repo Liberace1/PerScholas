@@ -1,3 +1,6 @@
+RUN WITH SUDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!!!!!!!
+
+
 This script installs tree for visual presentation
 This script installs Extract to close output after "TOP" commad is run, and uninstalls it afterwards
 
